@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  margin: 0;
+}
+
+:root {
+  --primary-color: #4100b3;
+  --secondary-color: #ffb700;
+  --morado-claro: #5d00ff;
+
+  --color-letras-blanco: #ffffff;
+  --color-letras-oscuro: #000000;
+
+  --tamano-subtitulos: 2vh;
+
+  --fondo-modal: rgba(255, 255, 255, 0.9);
+}

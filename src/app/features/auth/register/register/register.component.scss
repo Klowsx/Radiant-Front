@@ -1,0 +1,123 @@
+.register-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Montserrat";
+  align-items: center;
+  color: var(--color-letras-oscuro);
+  font-size: var(--tamano-subtitulos);
+
+  .card {
+    backdrop-filter: blur(1px) saturate(183%);
+    -webkit-backdrop-filter: blur(14px) saturate(183%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    width: 25vw;
+    height: 60vh;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 3.5vw;
+
+    .titles {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 10px;
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      h4 {
+        margin-top: 0px;
+      }
+    }
+
+    .mb-4 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+
+      label {
+        margin-bottom: 5px;
+      }
+
+      div {
+        display: flex;
+        border: 1px solid rgb(200, 200, 200);
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        border-radius: 7px;
+        background-color: #ffffff;
+
+        img {
+          padding: 0.5rem 1rem;
+        }
+
+        input {
+          width: 100%;
+          border: none;
+          height: 2rem;
+          margin: 0.1rem;
+          font-size: 1rem;
+          background-color: transparent;
+          border-left: 1px solid rgb(200, 200, 200);
+        }
+      }
+    }
+
+    .button-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+
+      button {
+        width: 90%;
+        padding: 1rem;
+        border: none;
+        background-color: #9333ea;
+        border-radius: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #7e22ce;
+        }
+      }
+    }
+
+    .alreadyReg {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+
+      h5 {
+        margin: 0;
+      }
+
+      a {
+        font-size: 0.8rem;
+        margin-left: 10px;
+        color: #b76afe;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
