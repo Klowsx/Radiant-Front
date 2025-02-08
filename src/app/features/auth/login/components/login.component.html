@@ -1,5 +1,7 @@
 <div class="login-container" *ngIf="isOpen" (click)="closeModal($event)">
     <form class="card" #modal (ngSubmit)="login()">
+        <!-- Botón para cerrar el modal -->
+        <button class="btnCerrar" type="button" (click)="cerrar()">x</button>
         <div class="titles">
             <h1>Inicio de sesión</h1>
             <h4>Introduzca su correo y contraseña</h4>
@@ -34,7 +36,6 @@
             <a (click)="abrirRegistro()">Regístrate aquí</a>
         </div>
 
-        <!-- Botón para cerrar el modal -->
-        <button type="button" (click)="cerrar()">Cerrar</button>
+
     </form>
 </div>

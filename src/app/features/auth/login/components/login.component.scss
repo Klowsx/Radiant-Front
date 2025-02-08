@@ -10,6 +10,7 @@
   align-items: center;
   color: var(--color-letras-oscuro);
   font-size: var(--tamano-subtitulos);
+  background-color: rgba(0, 0, 0, 0.141);
 
   .card {
     backdrop-filter: blur(1px) saturate(183%);
@@ -27,6 +28,24 @@
     padding: 20px;
     margin-right: 3.5vw;
     margin-bottom: 15vh;
+    font-size: var(--letra-normal);
+
+    .btnCerrar {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      background: transparent;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+      color: #aaaaaa;
+
+      &:hover {
+        color: red;
+      }
+    }
 
     .titles {
       text-align: center;
@@ -74,6 +93,7 @@
           font-size: 1rem;
           background-color: transparent;
           border-left: 1px solid rgb(200, 200, 200);
+          font-size: var(--letra-normal);
         }
       }
     }
@@ -83,7 +103,12 @@
       a {
         font-size: 0.8rem;
         text-decoration: none;
-        color: #b76afe;
+        color: var(--morado-claro);
+
+        &:hover {
+          color: var(--primary-color);
+          text-decoration: underline;
+        }
       }
     }
 
@@ -96,9 +121,13 @@
         width: 90%;
         padding: 1rem;
         border: none;
-        background-color: #9333ea;
+        background-color: var(--morado-claro);
         color: white;
         border-radius: 1rem;
+        cursor: pointer;
+        &:hover {
+          background-color: var(--primary-color);
+        }
       }
     }
 
@@ -109,8 +138,13 @@
       a {
         font-size: 0.8rem;
         margin-left: 10px;
+        cursor: pointer;
+        color: var(--morado-claro);
 
-        color: #b76afe;
+        &:hover {
+          color: var(--primary-color);
+          text-decoration: underline;
+        }
       }
     }
   }

@@ -21,6 +21,7 @@ export class RegisterComponent {
   confirmPassword: string = '';
   phone: string = '';
   address: string = '';
+  role: string = '';
 
   isOpen = false;
   @ViewChild('modal') modal!: ElementRef;
@@ -50,10 +51,11 @@ export class RegisterComponent {
 
   register() {
     const registerData = {
-      firstName: this.firstName,
-      lastName: this.lastName,
       email: this.email,
+      role: this.role,
       password: this.password,
+      name: this.firstName,
+      last_name: this.lastName,
       phone: this.phone,
       address: this.address,
     };
