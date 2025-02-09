@@ -5,6 +5,7 @@ import { NavComponent } from './shared/navbar/navbar.component';
 import { LoginComponent } from './features/auth/login/components/login.component';
 import { CommonModule } from '@angular/common';
 import { RegisterComponent } from './features/auth/register/register/register.component';
+import { HomeComponent } from './features/home/home.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { RegisterComponent } from './features/auth/register/register/register.co
     NavComponent,
     CommonModule,
     RegisterComponent,
+    HomeComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

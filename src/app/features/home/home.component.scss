@@ -1,0 +1,88 @@
+.home {
+  font-family: "Montserrat";
+  margin: 20px;
+  color: var(--primary-color);
+}
+
+.intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  overflow: hidden;
+  height: 78vh;
+}
+
+h2 {
+  font-size: var(--letra-titulo);
+}
+.intro-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.intro-img {
+  width: 50%;
+  height: auto;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.intro-text {
+  position: absolute;
+  z-index: 2;
+  padding: 20px;
+  max-width: 350px;
+}
+
+.intro-text {
+  top: 20px;
+  left: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.products-categories {
+  height: 60vh;
+  width: 100%;
+}
+
+.products-categories,
+.about-us {
+  margin-top: 40px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.category-card {
+  text-align: center;
+}
+
+button {
+  width: 25vw;
+
+  img {
+    width: 270px;
+    height: 170px;
+    margin-bottom: 10px;
+  }
+}
+
+.about-us {
+  padding: 20px;
+  text-align: center;
+}
